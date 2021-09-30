@@ -76,16 +76,21 @@ export const RegistroVentas = () => {
         </Row>
 
         <Form.Label>Vendedor</Form.Label>
-        <Form.Select aria-label="Default select example">
+        <Row className="mb-3">
+        <Col xs={9}>
+        <Form.Select  aria-label="Default select example">
           <option>Seleccione Vendedor</option>
           <option value="1">Vendedor1</option>
           <option value="2">Vendedor2</option>
           <option value="3">Vendedor3</option>
         </Form.Select>
-        <br />
-        <Button variant="primary" type="button" className="float-end">
+        </Col>
+        
+        <Button as={Col} variant="primary" type="button" className="float-center">
           Crear
         </Button>
+        
+        </Row>
       </Form>
 
       <br />
